@@ -88,5 +88,25 @@ kubectl scale deployment [deployment-name] --replicas=5  -> scale replicaSet of 
 kubectl scale -f deployment.yaml --replicas=5 -> same but with a file
 
 ## deployment options
+Zero downtime deployments allow software updates to be deployed to production without impacting end users
+One of the strenghs of kubernetes is zerodowntime deployments
+
+update an application's pod wihtout imparting end users
+
+Several options are available:
+  - rolling updates
+  - blue-green deployments
+  - canary deployments
+  - rollbacks
+
+## resume
+
+pods are deployed,managed and scaled using deployments and replicaSets
+
+Deployments are a higher-level resource that define one or more pod templates
+
+the kubectl create or apply commands can be used to run a deployment
+
+kubernetes supports zero downtime deployments
 
 
